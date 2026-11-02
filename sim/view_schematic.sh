@@ -19,12 +19,12 @@ xrun -64bit \
      -access +rwc \
      -timescale 1ns/1ps \
      -top tb_riscv_soc_top \
-     ../rtl/dot4_datapath.v \
-     ../rtl/dot4_accel_top.v \
-     ../rtl/rv32i_core.v \
-     ../rtl/uart_tx.v \
-     ../rtl/ram.v \
-     ../rtl/riscv_soc_top.v \
+     ../rtl/baseline/dot4_datapath.v \
+     ../rtl/baseline/dot4_accel_top.v \
+     ../rtl/baseline/rv32i_core.v \
+     ../rtl/baseline/uart_tx.v \
+     ../rtl/baseline/ram.v \
+     ../rtl/baseline/riscv_soc_top.v \
      ../tb/tb_riscv_soc_top.v \
      "$@"
 

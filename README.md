@@ -36,6 +36,11 @@ The SoC integrates the multi-cycle RV32I processor, unified dual-port SRAM, memo
 
 ![RISC-V SoC and DOT4 Accelerator Datapath](docs/images/riscv_soc_datapath_reference_style.png)
 
+### 📐 Synthesized RTL Schematic
+Synthesized and elaborated RTL schematic displaying the physical module-level interconnection between the RV32I Core, the DOT4 Vector Accelerator, SRAM Memory, and UART:
+
+![RISC-V SoC Top-Level RTL Schematic](docs/images/fig02_rtl_schematic_riscv_soc_top.png)
+
 ### 1. RV32I Multi-Cycle CPU Core
 - **Architecture**: Complete RV32I base integer instruction set implementation with a clean Finite State Machine (FSM): `FETCH` $\rightarrow$ `DECODE` $\rightarrow$ `EXECUTE` $\rightarrow$ `MEM_ACCESS` $\rightarrow$ `WRITEBACK`.
 - **Interrupt Controller**: Hardware interrupt line (`irq_dot4`) directly sampled during state transitions to release processor sleep loops with zero polling overhead.
