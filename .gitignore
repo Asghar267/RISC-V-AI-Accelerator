@@ -1,0 +1,75 @@
+# ==========================================
+# .gitignore for RISC-V SoC & Accelerator
+# ==========================================
+
+# --- Physical Design / ASIC Backend (Part 2 Release) ---
+# Ignored for Part 1 (Frontend & Architecture Release)
+asic/
+pdk/
+*.lib
+*.lef
+*.capTbl
+*.cdb
+*.tch
+*.ict
+tsmc18.v
+
+# --- Physical Design / ASIC Backend Databases & Large Binaries ---
+# (Keep ASIC scripts/reports if desired, but ignore tool databases and runs)
+asic/pnr/dbs/
+asic/pnr/lib/
+asic/pnr/lef/
+asic/pnr/captable/
+asic/pnr/work/
+*.enc
+*.enc.dat
+*.def
+*.spef
+*.sdf
+*.mtarpt
+
+# --- EDA Tool Logs & Command Files (Cadence / Synopsys / Mentor) ---
+*.cmd*
+*.log*
+*.history*
+*.key*
+*.tstamp
+*.db
+xmverilog.*
+xmsim*
+bpad*
+*.bpad
+*.bpad/
+xcelium.d/
+.waylog/
+*.vst
+*.tarpt
+fv/
+*.sdf.X
+sdf_annotate.log
+
+# --- Vivado / XSim Simulation & Build Dumps ---
+*.jou
+*.log
+*.pb
+*.wdb
+*.vcd
+*.fsdb
+*.shm/
+xsim.dir/
+.Xil/
+webtalk*.xml
+webtalk*.log
+
+# --- Internal Tracking & Posting Content ---
+posting_post/
+project_tracking/
+
+# --- Personal & Scratch Files ---
+Resume/
+*.docx
+scratch/
+.vscode/
+__pycache__/
+*.py[cod]
+*$py.class
